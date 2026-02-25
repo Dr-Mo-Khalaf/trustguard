@@ -1,0 +1,154 @@
+# Quick Start Guide
+
+Get trustguard up and running in 5 minutes.
+
+## 📦 Installation
+
+```bash
+# Basic installation (rules only)
+pip install trustguard
+
+# With judge support
+pip install trustguard[openai]      # For OpenAI judges
+pip install trustguard[anthropic]   # For Claude judges
+pip install trustguard[ai]          # For local Ollama judges
+pip install trustguard[all]         # Install everything
+```
+
+## 🚀 Your First Validation
+
+### Step 1: Import and Initialize
+
+```python
+from trustguard import TrustGuard
+from trustguard.schemas import GenericResponse
+
+# Create a guard with the generic schema
+guard = TrustGuard(schema_class=GenericResponse)
+```
+
+### Step 2: Validate an LLM Response
+
+```python
+# Example LLM response (as JSON string)
+response = '
+{
+    "content": "I'd be happy to help you reset your password. Please check your email.",
+    "sentiment": "positive",
+    "tone": "helpful",
+    "is_helpful": true
+}
+"'' >> quickstart.md
+echo '' >> quickstart.md
+echo '# Validate it' >> quickstart.md
+echo 'result = guard.validate(response)' >> quickstart.md
+echo '' >> quickstart.md
+echo '# Check the result' >> quickstart.md
+echo 'if result.is_approved:' >> quickstart.md
+echo '    print(✅ Response is safe!)' >> quickstart.md
+echo '    print(fContent: {result.data["'content'"]})' >> quickstart.md
+echo 'else:' >> quickstart.md
+echo '    print(f❌ Response blocked: {result.log})' >> quickstart.md
+echo 'python' >> quickstart.md
+echo '# Invalid JSON' >> quickstart.md
+echo 'result = guard.validate(This is not JSON)' >> quickstart.md
+echo 'print(result.status)  # REJECTED' >> quickstart.md
+echo 'print(result.log)     # JSON Extraction Error: ...' >> quickstart.md
+echo '' >> quickstart.md
+echo '# Missing required fields' >> quickstart.md
+echo 'invalid = '" >> quickstart.md
+echo { >> quickstart.md
+echo  content: Missing sentiment and tone >> quickstart.md
+echo } >> quickstart.md
+echo '
+result = guard.validate(invalid)
+print(result.status)  # "REJECTED"
+print(result.log)     # "Schema Error: ..."
+```
+
+## 🎯 Adding Custom Rules
+
+```python
+# Define a custom rule
+def check_profanity(data, raw_text, context=None):
+    profanity_list = ["badword1", "badword2"]
+    content = data.get("content", "").lower()
+    
+    for word in profanity_list:
+        if word in content:
+            return f"Profanity detected: {word}"
+    return None
+
+# Create guard with custom rule
+from trustguard.rules import DEFAULT_RULES
+guard = TrustGuard(
+    schema_class=GenericResponse,
+    custom_rules=[check_profanity] + DEFAULT_RULES
+)
+```
+
+## 🤖 Using a Judge
+
+```python
+from trustguard.judges import OpenAIJudge
+
+# Create a GPT-4 judge
+judge = OpenAIJudge(
+    model="gpt-4o-mini",
+    config={"system_prompt": "You are a strict safety judge."}
+)
+
+# Add it to your guard
+guard = TrustGuard(
+    schema_class=GenericResponse,
+    judge=judge
+)
+
+# Now catches nuanced issues
+result = guard.validate('{"content": "Sure, I can help... you idiot."}')
+print(result.log)  # "Judge [harassment]: Text contains insult"
+```
+
+## 📊 Batch Validation
+
+```python
+# Validate multiple responses at once
+responses = [response1, response2, response3]
+report = guard.validate_batch(responses)
+
+print(report.summary())
+# Total: 3 | Passed: 2 | Failed: 1
+# Top failures:
+#   - PII Detected: 1
+```
+
+## 🖥️ Using the CLI
+
+```bash
+# Run interactive demo
+trustguard --demo
+
+# Validate a JSON string
+trustguard --validate '{"content":"test","sentiment":"neutral","tone":"professional","is_helpful":true}'
+
+# Validate from file
+trustguard --file response.json
+
+# Show version
+trustguard --version
+
+# Show help
+trustguard --help
+```
+
+## 📈 What's Next?
+
+- Learn about [Schemas](schemas.md) - Define your own response structures
+- Explore the [Judge System](judges.md) - Use any model as a judge
+- Check out [Examples](examples.md) - See real-world use cases
+- Read the [API Reference](api.md) - Detailed documentation
+
+## 🆘 Getting Help
+
+- [GitHub Issues](https://github.com/yourusername/trustguard/issues)
+- [Discussions](https://github.com/yourusername/trustguard/discussions)

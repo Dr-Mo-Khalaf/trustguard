@@ -1,0 +1,98 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "twine>=4.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trustguard"
+version = "0.2.0"
+description = "Intelligent validation for LLM outputs with pluggable judge system. Lightweight, schema-first safety checks for AI applications."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+maintainers = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+keywords = [
+    "ai", "safety", "guardrails", "pydantic", "ollama", "openai",
+    "llm", "validation", "trust", "pii-detection", "ai-safety", "judge"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pydantic>=2.0.0",
+    "typing-extensions>=4.5.0",
+]
+
+[project.optional-dependencies]
+ai = ["ollama>=0.1.0"]
+openai = ["openai>=1.0.0"]
+anthropic = ["anthropic>=0.7.0"]
+all = ["trustguard[ai,openai,anthropic]"]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "mypy>=1.0.0",
+    "ruff>=0.1.0",
+    "openai>=1.0.0",
+    "ollama>=0.1.0",
+    "anthropic>=0.7.0",
+    "transformers>=4.35.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/trustguard"
+Repository = "https://github.com/yourusername/trustguard"
+Documentation = "https://trustguard.readthedocs.io"
+"Bug Tracker" = "https://github.com/yourusername/trustguard/issues"
+
+[project.scripts]
+trustguard = "trustguard.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["trustguard*"]
+exclude = ["tests*", "examples*"]
+
+[tool.setuptools.package-data]
+trustguard = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.8"
+strict = true
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+select = ["E", "F", "I", "B", "C4", "ARG"]
+ignore = []
+
+[tool.coverage.run]
+source = ["trustguard"]
+omit = ["tests/*"]

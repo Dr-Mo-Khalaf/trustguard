@@ -1,0 +1,2 @@
+[console_scripts]
+trustguard = trustguard.cli:main

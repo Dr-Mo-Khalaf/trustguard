@@ -1,0 +1,149 @@
+
+:root {
+  --md-primary-fg-color: #3949ab;
+  --md-primary-fg-color--light: #5c6bc0;
+  --md-primary-fg-color--dark: #283593;
+  --md-accent-fg-color: #ff4081;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  border-bottom: 1px solid var(--md-primary-fg-color--light);
+  padding-bottom: 0.2em;
+}
+
+.md-typeset h3 {
+  font-weight: 500;
+  color: var(--md-primary-fg-color--dark);
+}
+
+.md-typeset code {
+  border-radius: 0.2em;
+  padding: 0.1em 0.3em;
+}
+
+.md-typeset pre > code {
+  border-radius: 0.4em;
+  padding: 0.8em;
+}
+
+.md-typeset .admonition {
+  border-radius: 0.4em;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.md-typeset .admonition-title {
+  font-weight: 600;
+}
+
+.md-typeset table:not(.highlighttable) {
+  border-radius: 0.4em;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.md-typeset table:not(.highlighttable) th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+  font-weight: 600;
+}
+
+.md-typeset table:not(.highlighttable) tr:nth-child(even) {
+  background-color: rgba(0,0,0,0.02);
+}
+
+.md-header {
+  background-color: var(--md-primary-fg-color) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.md-tabs {
+  background-color: var(--md-primary-fg-color--dark) !important;
+}
+
+.md-search__form {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 0.2em;
+}
+
+.md-search__form:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.md-footer {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+.md-footer-meta {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+.md-typeset a {
+  color: var(--md-accent-fg-color);
+  text-decoration: none;
+}
+
+.md-typeset a:hover {
+  text-decoration: underline;
+}
+
+.md-typeset .task-list-control .task-list-indicator::before {
+  background-color: var(--md-primary-fg-color);
+}
+
+.md-typeset .task-list-control [type=checkbox]:checked + .task-list-indicator::before {
+  background-color: var(--md-accent-fg-color);
+}
+
+/* Custom classes for badges */
+.badge {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  font-size: 0.75em;
+  font-weight: 600;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  background-color: var(--md-primary-fg-color);
+}
+
+.badge-success {
+  background-color: #4caf50;
+}
+
+.badge-warning {
+  background-color: #ff9800;
+}
+
+.badge-danger {
+  background-color: #f44336;
+}
+
+.badge-info {
+  background-color: #2196f3;
+}
+
+/* Code block enhancements */
+.highlight .k, .highlight .kd {
+  color: #d73a49;
+}
+
+.highlight .nf {
+  color: #6f42c1;
+}
+
+.highlight .s {
+  color: #032f62;
+}
+
+.highlight .mi {
+  color: #005cc5;
+}
