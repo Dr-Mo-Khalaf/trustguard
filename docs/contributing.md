@@ -64,7 +64,7 @@ Examples of unacceptable behavior include:
 
 ```bash
 # Fork and clone the repository
-git clone https://github.com/yourusername/trustguard.git
+git clone https://github.com/Dr-Mo-Khalaf/trustguard.git
 cd trustguard
 
 # Create virtual environment (recommended)

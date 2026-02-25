@@ -10,10 +10,10 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Mohammed Khalaf Salama", email = "mkhalafsalama@gmail.com"}
 ]
 maintainers = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Mohammed Khalaf Salama", email = "mkhalafsalama@gmail.com"}
 ]
 keywords = [
     "ai", "safety", "guardrails", "pydantic", "ollama", "openai",
@@ -59,10 +59,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/trustguard"
-Repository = "https://github.com/yourusername/trustguard"
-Documentation = "https://trustguard.readthedocs.io"
-"Bug Tracker" = "https://github.com/yourusername/trustguard/issues"
+Homepage = "https://github.com/Dr-Mo-Khalaf/trustguard"
+Repository = "https://github.com/Dr-Mo-Khalaf/trustguard"
+Documentation = "https://github.com/Dr-Mo-Khalaf/trustguard"
+"Bug Tracker" = "https://github.com/Dr-Mo-Khalaf/trustguard/issues"
 
 [project.scripts]
 trustguard = "trustguard.cli:main"

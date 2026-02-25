@@ -179,8 +179,8 @@ We welcome contributions! See our [Contributing Guide](contributing.md) for:
 
 ## 🆘 Support
 
-- [GitHub Issues](https://github.com/yourusername/trustguard/issues) - Bug reports, feature requests
-- [Discussions](https://github.com/yourusername/trustguard/discussions) - Questions, ideas
+- [GitHub Issues](https://github.com/Dr-Mo-Khalaf/trustguard/issues) - Bug reports, feature requests
+- [Discussions](https://github.com/Dr-Mo-Khalaf/trustguard/discussions) - Questions, ideas
 - [Contributing Guide](contributing.md) - How to help
 
 ## 📄 License

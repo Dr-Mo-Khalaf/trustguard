@@ -5,10 +5,10 @@ Summary: Intelligent validation for LLM outputs with pluggable judge system. Lig
 Author-email: Your Name <your.email@example.com>
 Maintainer-email: Your Name <your.email@example.com>
 License: MIT
-Project-URL: Homepage, https://github.com/yourusername/trustguard
-Project-URL: Repository, https://github.com/yourusername/trustguard
-Project-URL: Documentation, https://trustguard.readthedocs.io
-Project-URL: Bug Tracker, https://github.com/yourusername/trustguard/issues
+Project-URL: Homepage, https://github.com/Dr-Mo-Khalaf/trustguard
+Project-URL: Repository, https://github.com/Dr-Mo-Khalaf/trustguard
+Project-URL: Documentation, ttps://github.com/Dr-Mo-Khalaf/trustguard
+Project-URL: Bug Tracker, https://github.com/Dr-Mo-Khalaf/trustguard/issues
 Keywords: ai,safety,guardrails,pydantic,ollama,openai,llm,validation,trust,pii-detection,ai-safety,judge
 Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers

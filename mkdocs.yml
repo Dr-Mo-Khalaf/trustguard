@@ -1,10 +1,10 @@
 site_name: trustguard
 site_description: Intelligent validation for LLM outputs with pluggable judge system
 site_author: Your Name
-site_url: https://yourusername.github.io/trustguard
+site_url: https://github.com/Dr-Mo-Khalaf/trustguard
 
-repo_name: yourusername/trustguard
-repo_url: https://github.com/yourusername/trustguard
+repo_name: Dr-Mo-Khalaf/trustguard
+repo_url: https://github.com/Dr-Mo-Khalaf/trustguard
 edit_uri: edit/main/docs/
 
 theme:
@@ -92,11 +92,11 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername/trustguard
+      link: https://github.com/Dr-Mo-Khalaf/trustguard
     - icon: fontawesome/brands/python
       link: https://pypi.org/project/trustguard/
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/yourusername
+      link: https://www.linkedin.com/in/dr-mohammed-khalaf-salama-718959243/
   consent:
     title: Cookie consent
     description: >-

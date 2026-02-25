@@ -150,5 +150,5 @@ trustguard --help
 
 ## 🆘 Getting Help
 
-- [GitHub Issues](https://github.com/yourusername/trustguard/issues)
-- [Discussions](https://github.com/yourusername/trustguard/discussions)
+- [GitHub Issues](https://github.com/Dr-Mo-Khalaf/trustguard/issues)
+- [Discussions](https://github.com/Dr-Mo-Khalaf/trustguard/discussions)
