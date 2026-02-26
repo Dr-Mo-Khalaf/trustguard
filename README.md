@@ -302,18 +302,18 @@ trustguard --help
 
 ## 📚 Documentation
 
-Comprehensive documentation is available at [https://Dr-Mo-Khalaf.github.io/trustguard/](https://Dr-Mo-Khalaf.github.io/trustguard/)
+Comprehensive documentation is available at [https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docs/index.md](github)
 
 | Guide | Description |
 |-------|-------------|
-| [Quick Start](docs/quickstart.md) | Get up and running in 5 minutes |
-| [Core Concepts](docs/concepts.md) | Understand how trustguard works |
-| [Schema Validation](docs/schemas.md) | Define your own response structures |
-| [Rules System](docs/rules.md) | Built-in validation rules |
-| [Judge System](docs/judges.md) | Deep dive into AI judges |
-| [API Reference](docs/api.md) | Complete API documentation |
-| [Examples](docs/examples.md) | Real-world use cases |
-| [Contributing](docs/contributing.md) | How to contribute |
+| [Quick Start](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/quickstart.md) | Get up and running in 5 minutes |
+| [Core Concepts](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/concepts.md) | Understand how trustguard works |
+| [Schema Validation](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/schemas.md) | Define your own response structures |
+| [Rules System](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/rules.md) | Built-in validation rules |
+| [Judge System](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/judges.md) | Deep dive into AI judges |
+| [API Reference](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/api.md) | Complete API documentation |
+| [Examples](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/examples.md) | Real-world use cases |
+| [Contributing](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/contributing.md) | How to contribute |
 
 ---
 
@@ -403,10 +403,10 @@ We welcome contributions! Here's how you can help:
 - 🐛 **Report bugs** - Open an issue
 - 💡 **Suggest features** - Start a discussion
 - 📝 **Improve documentation** - Submit a PR
-- 🔧 **Add new rules or judges** - Follow our [contributing guide](docs/contributing.md)
+- 🔧 **Add new rules or judges** - Follow our [contributing guide](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docs/contributing.md)
 - 🌟 **Star the project** - Show your support
 
-See [CONTRIBUTING.md](docs/contributing.md) for detailed guidelines.
+See [CONTRIBUTING.md](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docs/contributing.md) for detailed guidelines.
 
 ---
 
