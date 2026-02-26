@@ -38,34 +38,42 @@ response = '
     "tone": "helpful",
     "is_helpful": true
 }
-"'' >> quickstart.md
-echo '' >> quickstart.md
-echo '# Validate it' >> quickstart.md
-echo 'result = guard.validate(response)' >> quickstart.md
-echo '' >> quickstart.md
-echo '# Check the result' >> quickstart.md
-echo 'if result.is_approved:' >> quickstart.md
-echo '    print(✅ Response is safe!)' >> quickstart.md
-echo '    print(fContent: {result.data["'content'"]})' >> quickstart.md
-echo 'else:' >> quickstart.md
-echo '    print(f❌ Response blocked: {result.log})' >> quickstart.md
-echo 'python' >> quickstart.md
-echo '# Invalid JSON' >> quickstart.md
-echo 'result = guard.validate(This is not JSON)' >> quickstart.md
-echo 'print(result.status)  # REJECTED' >> quickstart.md
-echo 'print(result.log)     # JSON Extraction Error: ...' >> quickstart.md
-echo '' >> quickstart.md
-echo '# Missing required fields' >> quickstart.md
-echo 'invalid = '" >> quickstart.md
-echo { >> quickstart.md
-echo  content: Missing sentiment and tone >> quickstart.md
-echo } >> quickstart.md
-echo '
-result = guard.validate(invalid)
-print(result.status)  # "REJECTED"
-print(result.log)     # "Schema Error: ..."
+## Validate it
+
+```python
+result = guard.validate(response)
+
+# Check the result
+if result.is_approved:
+    print("✅ Response is safe!")
+    print(f"Content: {result.data['content']}")
+else:
+    print(f"❌ Response blocked: {result.log}")
 ```
 
+---
+
+## Example Failures
+
+### Invalid JSON
+
+```python
+result = guard.validate("This is not JSON")
+print(result.status)  # REJECTED
+print(result.log)     # JSON Extraction Error: ...
+```
+
+### Missing Required Fields
+
+```python
+invalid = {
+    "content": "Missing sentiment and tone"
+}
+
+result = guard.validate(invalid)
+print(result.status)  # REJECTED
+print(result.log)     # Schema Error: ...
+```
 ## 🎯 Adding Custom Rules
 
 ```python
