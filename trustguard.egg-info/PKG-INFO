@@ -2,12 +2,12 @@ Metadata-Version: 2.4
 Name: trustguard
 Version: 0.2.0
 Summary: Intelligent validation for LLM outputs with pluggable judge system. Lightweight, schema-first safety checks for AI applications.
-Author-email: Your Name <your.email@example.com>
-Maintainer-email: Your Name <your.email@example.com>
+Author-email: Your Name <mkhalafsalama@gmail.com>
+Maintainer-email: Your Name <mkhalafsalama@gmail.com>
 License: MIT
 Project-URL: Homepage, https://github.com/Dr-Mo-Khalaf/trustguard
 Project-URL: Repository, https://github.com/Dr-Mo-Khalaf/trustguard
-Project-URL: Documentation, ttps://github.com/Dr-Mo-Khalaf/trustguard
+Project-URL: Documentation, https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/index.md
 Project-URL: Bug Tracker, https://github.com/Dr-Mo-Khalaf/trustguard/issues
 Keywords: ai,safety,guardrails,pydantic,ollama,openai,llm,validation,trust,pii-detection,ai-safety,judge
 Classifier: Development Status :: 4 - Beta

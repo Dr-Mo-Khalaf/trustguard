@@ -400,18 +400,14 @@ except ImportError:
                 "MyCustomJudge requires extra dependencies. "
                 "Install with: pip install trustguard[my]"
             )
-🚀 Next Steps
-API Reference - Complete judge API documentation
+## 📈 What's Next?
 
-Examples - More real-world examples
+- Learn about [Schemas](schemas.md) - Define your own response structures
+- Explore the [Judge System](judges.md) - Use any model as a judge
+- Check out [Examples](examples.md) - See real-world use cases
+- Read the [API Reference](api.md) - Detailed documentation
 
-Contributing - Add your own judge
+## 🆘 Getting Help
 
-Quick Start - Get started quickly
-
-📚 Related Topics
-Rules System - Fast deterministic checks
-
-Schema Validation - Define response structures
-
-Core Concepts - How trustguard works
+- [GitHub Issues](https://github.com/Dr-Mo-Khalaf/trustguard/issues)
+- [Discussions](https://github.com/Dr-Mo-Khalaf/trustguard/discussions)
