@@ -4,15 +4,13 @@
 
 **Bidirectional validation for LLM applications - secure both input and output with pluggable AI judges**
 
-</div>
 [![PyPI version](https://img.shields.io/pypi/v/trustguard.svg)](https://pypi.org/project/trustguard/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/trustguard.svg)](https://pypi.org/project/trustguard/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Documentation](https://img.shields.io/badge/docs-github.io-blue)](https://Dr-Mo-Khalaf.github.io/trustguard/)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Downloads](https://pepy.tech/badge/trustguard)](https://pepy.tech/project/trustguard)
+[![Documentation](https://img.shields.io/badge/docs-github.io-blue)](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/index.md)
+
 [![GitHub Stars](https://img.shields.io/github/stars/Dr-Mo-Khalaf/trustguard?style=social)](https://github.com/Dr-Mo-Khalaf/trustguard)
+</div>
 
 **Lightweight, schema-first safety checks for AI applications**
 
