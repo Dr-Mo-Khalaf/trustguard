@@ -1,4 +1,3 @@
-```markdown
 # Judge System
 
 The judge system is the most powerful feature of trustguard. It allows you to use any AI model as a safety validator.
