@@ -3,9 +3,8 @@
 <div align="center">
 
 **Bidirectional validation for LLM applications - secure both input and output with pluggable AI judges**
-
-[![PyPI version](https://img.shields.io/pypi/v/trustguard.svg)](https://pypi.org/project/trustguard/)
-[![Python Versions](https://img.shields.io/pypi/pyversions/trustguard.svg)](https://pypi.org/project/trustguard/)
+[![PyPI version](https://img.shields.io/pypi/v/trustguard)](https://pypi.org/project/trustguard/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/trustguard.svg?cacheSeconds=1)](https://pypi.org/project/trustguard/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Documentation](https://img.shields.io/badge/docs-github.io-blue)](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/index.md)
 
@@ -302,7 +301,7 @@ trustguard --help
 
 ## 📚 Documentation
 
-Comprehensive documentation is available at [https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docs/index.md](github)
+Comprehensive documentation is available at [docs](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docs/index.md)
 
 | Guide | Description |
 |-------|-------------|
