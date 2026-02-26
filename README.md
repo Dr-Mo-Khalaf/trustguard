@@ -3,6 +3,7 @@
 <div align="center">
 
 **Bidirectional validation for LLM applications - secure both input and output with pluggable AI judges**
+
 [![PyPI version](https://img.shields.io/pypi/v/trustguard)](https://pypi.org/project/trustguard/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/trustguard.svg?cacheSeconds=1)](https://pypi.org/project/trustguard/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
