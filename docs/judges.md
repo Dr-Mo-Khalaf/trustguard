@@ -1,4 +1,4 @@
-
+```markdown
 # Judge System
 
 The judge system is the most powerful feature of trustguard. It allows you to use any AI model as a safety validator.
@@ -33,11 +33,15 @@ class MyJudge(BaseJudge):
         # "confidence": float (0-1)
         # "severity": "low"/"medium"/"high"/"critical"
         # "metadata": dict
-🤖 Built-in Judges
-1. OpenAIJudge
+```
+
+## 🤖 Built-in Judges
+
+### 1. OpenAIJudge
+
 Uses GPT-4 or GPT-3.5 for cloud-based validation.
 
-python
+```python
 from trustguard.judges import OpenAIJudge
 
 judge = OpenAIJudge(
@@ -54,15 +58,20 @@ judge = OpenAIJudge(
 )
 
 result = judge.judge("Some text to evaluate")
-2. OllamaJudge
+```
+
+### 2. OllamaJudge
+
 Uses local models for privacy-focused validation.
 
-bash
+```bash
 # First, install and run Ollama
 curl -fsSL https://ollama.ai/install.sh | sh
 ollama pull phi3
 ollama serve
-python
+```
+
+```python
 from trustguard.judges import OllamaJudge
 
 judge = OllamaJudge(
@@ -75,10 +84,13 @@ judge = OllamaJudge(
         "prompt_template": "Custom prompt with {text}"
     }
 )
-3. AnthropicJudge
+```
+
+### 3. AnthropicJudge
+
 Uses Claude models for constitutional AI validation.
 
-python
+```python
 from trustguard.judges import AnthropicJudge
 
 judge = AnthropicJudge(
@@ -90,10 +102,13 @@ judge = AnthropicJudge(
         "max_tokens": 300
     }
 )
-4. CallableJudge (Universal Adapter)
+```
+
+### 4. CallableJudge (Universal Adapter)
+
 Use ANY function or model as a judge.
 
-python
+```python
 from trustguard.judges import CallableJudge
 
 # Hugging Face example
@@ -128,10 +143,13 @@ def groq_judge(text):
     return json.loads(response.choices[0].message.content)
 
 judge = CallableJudge(groq_judge, name="GroqLlama3")
-5. EnsembleJudge
+```
+
+### 5. EnsembleJudge
+
 Combine multiple judges for maximum accuracy.
 
-python
+```python
 from trustguard.judges import EnsembleJudge
 
 # Create individual judges
@@ -154,49 +172,51 @@ guard = TrustGuard(
     schema_class=GenericResponse,
     judge=ensemble
 )
-🎯 Choosing the Right Judge
-Judge	Best For	Trade-offs
-OpenAIJudge	Production apps	Cost, internet required
-OllamaJudge	Privacy, offline	Requires local GPU/RAM
-AnthropicJudge	Safety-critical	Cost, slower
-CallableJudge	Custom models	You implement logic
-EnsembleJudge	Maximum accuracy	Multiple API calls
-🔧 Judge Configuration
-Common Config Options
-Option	Description	Default
-on_error	What to do on error ("allow"/"block")	"allow"
-log_errors	Log errors to console	True
-cache_size	Number of results to cache	100
-timeout	Timeout in seconds	30
-Judge-Specific Options
-OpenAIJudge:
+```
 
-system_prompt - Custom system prompt
+## 🎯 Choosing the Right Judge
 
-safety_threshold - Confidence threshold (0-1)
+| Judge | Best For | Trade-offs |
+|-------|----------|------------|
+| **OpenAIJudge** | Production apps | Cost, internet required |
+| **OllamaJudge** | Privacy, offline | Requires local GPU/RAM |
+| **AnthropicJudge** | Safety-critical | Cost, slower |
+| **CallableJudge** | Custom models | You implement logic |
+| **EnsembleJudge** | Maximum accuracy | Multiple API calls |
 
-temperature - Model temperature (0-2)
+## 🔧 Judge Configuration
 
-max_tokens - Max tokens in response
+### Common Config Options
 
-OllamaJudge:
+| Option | Description | Default |
+|--------|-------------|---------|
+| `on_error` | What to do on error ("allow"/"block") | "allow" |
+| `log_errors` | Log errors to console | True |
+| `cache_size` | Number of results to cache | 100 |
+| `timeout` | Timeout in seconds | 30 |
 
-prompt_template - Custom prompt template
+### Judge-Specific Options
 
-temperature - Model temperature
+**OpenAIJudge:**
+- `system_prompt` - Custom system prompt
+- `safety_threshold` - Confidence threshold (0-1)
+- `temperature` - Model temperature (0-2)
+- `max_tokens` - Max tokens in response
 
-top_p - Nucleus sampling parameter
+**OllamaJudge:**
+- `prompt_template` - Custom prompt template
+- `temperature` - Model temperature
+- `top_p` - Nucleus sampling parameter
 
-AnthropicJudge:
+**AnthropicJudge:**
+- `system_prompt` - Custom system prompt
+- `max_tokens` - Max tokens in response
 
-system_prompt - Custom system prompt
+## 📊 Judge Output
 
-max_tokens - Max tokens in response
-
-📊 Judge Output
 All judges return a normalized dictionary:
 
-python
+```python
 {
     "safe": True,  # boolean
     "reason": "Detailed explanation",
@@ -208,11 +228,15 @@ python
         "latency_ms": 450
     }
 }
-🎯 Best Practices
-1. Cascading Validation
+```
+
+## 🎯 Best Practices
+
+### 1. Cascading Validation
+
 Use cheap judges first, expensive ones only when needed:
 
-python
+```python
 def cascading_validate(text):
     # Fast local judge
     local_result = ollama_judge.judge(text)
@@ -221,26 +245,35 @@ def cascading_validate(text):
     
     # Expensive cloud judge for uncertain cases
     return openai_judge.judge(text)
-2. Ensemble Voting
+```
+
+### 2. Ensemble Voting
+
 Combine multiple judges for higher accuracy:
 
-python
+```python
 ensemble = EnsembleJudge([
     OpenAIJudge(model="gpt-4o-mini", weight=2.0),
     OllamaJudge(model="llama3", weight=1.0),
     CallableJudge(my_rule_judge, weight=1.0)
 ], strategy="weighted_vote")
-3. Caching
+```
+
+### 3. Caching
+
 Enable caching for repeated texts:
 
-python
+```python
 judge = OpenAIJudge(
     config={"cache_size": 1000}  # Cache last 1000 results
 )
-4. Error Handling
+```
+
+### 4. Error Handling
+
 Configure how judges handle errors:
 
-python
+```python
 judge = OpenAIJudge(
     config={
         "on_error": "block",  # Block on errors
@@ -254,22 +287,22 @@ guard = TrustGuard(
     judge=judge,
     config={"fail_on_judge_error": True}  # Raise on errors
 )
-📈 Performance Tips
-Use local judges for high-volume, privacy-sensitive data
+```
 
-Cache results for repeated queries
+## 📈 Performance Tips
 
-Batch validation for multiple texts
+1. **Use local judges** for high-volume, privacy-sensitive data
+2. **Cache results** for repeated queries
+3. **Batch validation** for multiple texts
+4. **Set appropriate timeouts** to avoid hanging
+5. **Use smaller models** (phi3, gpt-4o-mini) for speed
+6. **Parallelize** independent judge calls
 
-Set appropriate timeouts to avoid hanging
+## 🚀 Advanced Examples
 
-Use smaller models (phi3, gpt-4o-mini) for speed
+### Content Moderation System
 
-Parallelize independent judge calls
-
-🚀 Advanced Examples
-Content Moderation System
-python
+```python
 class ContentModerator:
     def __init__(self):
         self.judge = EnsembleJudge([
@@ -294,8 +327,11 @@ class ContentModerator:
             "reason": result.log,
             "data": result.data if result.is_approved else None
         }
-PII Redaction System
-python
+```
+
+### PII Redaction System
+
+```python
 def pii_judge(text):
     import re
     patterns = {
@@ -319,17 +355,18 @@ def pii_judge(text):
 
 judge = CallableJudge(pii_judge)
 guard = TrustGuard(schema_class=GenericResponse, judge=judge)
-🔄 Judge Lifecycle
-Initialization - Judge is created with config
+```
 
-Validation - judge() method called for each text
+## 🔄 Judge Lifecycle
 
-Caching - Results optionally cached
+1. **Initialization** - Judge is created with config
+2. **Validation** - `judge()` method called for each text
+3. **Caching** - Results optionally cached
+4. **Cleanup** - Resources released when done
 
-Cleanup - Resources released when done
+## 📊 Monitoring Judges
 
-📊 Monitoring Judges
-python
+```python
 # Track judge performance
 stats = {
     "total_calls": 0,
@@ -354,9 +391,13 @@ class MonitoredJudge(BaseJudge):
         except Exception as e:
             self.stats["errors"] += 1
             raise
-🎨 Creating Custom Judges
-Step 1: Inherit from BaseJudge
-python
+```
+
+## 🎨 Creating Custom Judges
+
+### Step 1: Inherit from BaseJudge
+
+```python
 from trustguard.judges import BaseJudge
 
 class MyCustomJudge(BaseJudge):
@@ -365,8 +406,11 @@ class MyCustomJudge(BaseJudge):
         self.api_key = api_key
         self.weight = weight
         # Initialize your client
-Step 2: Implement judge() method
-python
+```
+
+### Step 2: Implement judge() method
+
+```python
 def judge(self, text: str) -> Dict[str, Any]:
     try:
         # Your validation logic
@@ -388,8 +432,11 @@ def judge(self, text: str) -> Dict[str, Any]:
             "confidence": 0.0,
             "severity": "low"
         }
-Step 3: Add to judges module
-python
+```
+
+### Step 3: Add to judges module
+
+```python
 # In trustguard/judges/__init__.py
 try:
     from .my_judge import MyCustomJudge
@@ -400,6 +447,21 @@ except ImportError:
                 "MyCustomJudge requires extra dependencies. "
                 "Install with: pip install trustguard[my]"
             )
+```
+
+## 🚀 Next Steps
+
+- [API Reference](api.md) - Complete judge API documentation
+- [Examples](examples.md) - More real-world examples
+- [Contributing](contributing.md) - Add your own judge
+- [Quick Start](quickstart.md) - Get started quickly
+
+## 📚 Related Topics
+
+- [Rules System](rules.md) - Fast deterministic checks
+- [Schema Validation](schemas.md) - Define response structures
+- [Core Concepts](concepts.md) - How trustguard works
+
 ## 📈 What's Next?
 
 - Learn about [Schemas](schemas.md) - Define your own response structures
