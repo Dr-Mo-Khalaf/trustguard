@@ -1,6 +1,4 @@
-Here's the complete corrected `index.md` file. Copy all of this and paste it into your Notepad file:
 
-```markdown
 # trustguard Documentation
 
 <div align="center">
