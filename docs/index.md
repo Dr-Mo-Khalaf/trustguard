@@ -2,7 +2,8 @@
 
 <div align="center">
 
-**Intelligent validation for LLM outputs with pluggable judge system**
+**Complete validation framework for LLM inputs and outputs with pluggable judges**
+
 [![PyPI version](https://badge.fury.io/py/trustguard.svg)](https://pypi.org/project/trustguard/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/trustguard.svg)](https://pypi.org/project/trustguard/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -22,7 +23,16 @@
 
 ## 🎯 What is trustguard?
 
-trustguard is a lightweight, extensible Python library that validates LLM (Large Language Model) outputs. It combines fast rule-based validation with an intelligent pluggable judge system that can use any AI model for nuanced content evaluation.
+trustguard is a lightweight, extensible Python framework that provides comprehensive validation for Large Language Model (LLM) applications. It operates at both ends of the LLM pipeline:
+
+- **Input Validation**: Blocks harmful prompts, jailbreak attempts, and toxic user content before they reach your LLM
+- **Output Validation**: Filters unsafe responses, PII leakage, and policy violations before they reach your users
+
+The framework combines two complementary approaches:
+- **Fast rule-based validation** (microseconds) for deterministic checks like PII detection, blocklist filtering, and toxicity detection
+- **Pluggable judge system** that can use any AI model (OpenAI GPT-4, Anthropic Claude, local Ollama, or custom models) for nuanced, context-aware evaluation
+
+With its modular architecture, trustguard is easy to extend with custom rules, judges, and schemas - making it suitable for everything from simple chatbots to complex enterprise AI applications.
 
 ### Key Features
 

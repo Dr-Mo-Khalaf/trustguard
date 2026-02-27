@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "trustguard"
 version = "0.2.2"
-description = "Intelligent validation for LLM outputs with pluggable judge system. Lightweight, schema-first safety checks for AI applications."
+description = "Lightweight, extensible Python framework that validates LLM inputs and outputs with fast rule-based validation and pluggable AI judges"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}

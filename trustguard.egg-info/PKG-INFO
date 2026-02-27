@@ -1,9 +1,9 @@
 Metadata-Version: 2.4
 Name: trustguard
-Version: 0.2.0
-Summary: Intelligent validation for LLM outputs with pluggable judge system. Lightweight, schema-first safety checks for AI applications.
+Version: 0.2.2
+Summary: Complete validation framework for LLM inputs and outputs with pluggable judges
 Author-email: Your Name <mkhalafsalama@gmail.com>
-Maintainer-email: Your Name <mkhalafsalama@gmail.com>
+Maintainer-email: Your Name <mkhalafsalama@example.com>
 License: MIT
 Project-URL: Homepage, https://github.com/Dr-Mo-Khalaf/trustguard
 Project-URL: Repository, https://github.com/Dr-Mo-Khalaf/trustguard
@@ -51,7 +51,7 @@ Requires-Dist: transformers>=4.35.0; extra == "dev"
 
 <div align="center">
 
-**Intelligent validation for LLM outputs with pluggable judge system. Lightweight, schema-first safety checks for AI applications.**
+**Comprehensive validation framework for LLM inputs and outputs with pluggable AI judges. Lightweight, schema-first safety checks for production AI applications.**
 
 [![PyPI version](https://badge.fury.io/py/trustguard.svg)](https://badge.fury.io/py/trustguard)
 [![Python Versions](https://img.shields.io/pypi/pyversions/trustguard.svg)](https://pypi.org/project/trustguard/)
