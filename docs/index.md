@@ -2,7 +2,11 @@
 
 <div align="center">
 
+<<<<<<< HEAD
 **Complete validation framework for LLM inputs and outputs with pluggable judges**
+=======
+**Intelligent validation for LLM outputs with pluggable judge system**
+>>>>>>> 07b0ef79bfe7732f857ebbe95b0278f2861e4db3
 
 [![PyPI version](https://badge.fury.io/py/trustguard.svg)](https://pypi.org/project/trustguard/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/trustguard.svg)](https://pypi.org/project/trustguard/)
