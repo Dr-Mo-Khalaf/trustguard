@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<<<<<<< HEAD
+
 **Complete validation framework for LLM inputs and outputs with pluggable judges**
 =======
 **Intelligent validation for LLM outputs with pluggable judge system**
