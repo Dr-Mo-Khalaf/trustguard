@@ -119,7 +119,8 @@ class TrustGuard:
         self.judge = judge
         
         # Load default rules if no custom rules provided
-        if not custom_rules:
+        # if not custom_rules: # bug solved report1
+        if custom_rules is None:
             try:
                 from trustguard.rules import DEFAULT_RULES
                 self.custom_rules = DEFAULT_RULES.copy()

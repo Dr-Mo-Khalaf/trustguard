@@ -179,7 +179,7 @@ We welcome contributions! See our [Contributing Guide](contributing.md) for:
 
 - **Stars**: ⭐ 0 (you can be the first!)
 - **Contributors**: 👥 1
-- **Version**: 📦 0.2.3
+- **Version**: 📦 0.2.4
 - **License**: 📄 Apache License, Version 2.0
 - **Python**: 🐍 3.8+
 

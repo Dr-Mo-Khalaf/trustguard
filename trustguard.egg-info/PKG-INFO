@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: trustguard
-Version: 0.2.3
+Version: 0.2.4
 Summary: Complete validation framework for LLM inputs and outputs with pluggable judges
 Author-email: Mohammed Khalaf Salama <mkhalafsalama@gmail.com>
 Maintainer-email: Mohammed Khalaf Salama <mkhalafsalama@example.com>
@@ -14,7 +14,7 @@ Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
 Classifier: Topic :: Software Development :: Libraries :: Python Modules
 Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
-Classifier: License :: OSI Approved :: Apache License 2.0
+Classifier: License :: OSI Approved :: Apache Software License
 Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9
