@@ -1,6 +1,6 @@
 site_name: trustguard
 site_description: Complete validation framework for LLM inputs and outputs with pluggable judges
-site_author: Your Name
+site_author: Mohammed Khalaf Salama
 site_url: https://github.com/Dr-Mo-Khalaf/trustguard
 
 repo_name: Dr-Mo-Khalaf/trustguard
@@ -105,10 +105,10 @@ extra:
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
   analytics:
-    provider: google
-    property: G-XXXXXXXXXX
+    provider: 
+    property: 
   version:
-    provider: mike
+    provider: 
 
 copyright: Copyright &copy; 2026 Mohammed Khalaf Salama
 

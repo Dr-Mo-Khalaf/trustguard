@@ -8,8 +8,9 @@
 [![Python Versions](https://img.shields.io/pypi/pyversions/trustguard.svg?cacheSeconds=1)](https://pypi.org/project/trustguard/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Documentation](https://img.shields.io/badge/docs-github.io-blue)](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/index.md)
+<!-- [![GitHub Stars](https://img.shields.io/github/stars/Dr-Mo-Khalaf/trustguard?style=social)](https://github.com/Dr-Mo-Khalaf/trustguard) -->
+![Downloads](https://pepy.tech/badge/trustguard)
 
-[![GitHub Stars](https://img.shields.io/github/stars/Dr-Mo-Khalaf/trustguard?style=social)](https://github.com/Dr-Mo-Khalaf/trustguard)
 </div>
 
 **Lightweight, schema-first safety checks for AI applications**
@@ -535,7 +536,7 @@ See [CONTRIBUTING.md](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustgu
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -562,8 +563,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | **PyPI Downloads** | [![Downloads](https://pepy.tech/badge/trustguard)](https://pepy.tech/project/trustguard) |
 | **GitHub Stars** | [![GitHub stars](https://img.shields.io/github/stars/Dr-Mo-Khalaf/trustguard)](https://github.com/Dr-Mo-Khalaf/trustguard) |
 | **Python Versions** | 3.8+ |
-| **License** | MIT |
-| **Last Release** | v0.2.1 |
+| **License** | Apache License 2.0 |
+| **Last Release** | v0.2.3 |
 
 ---
 
@@ -577,7 +578,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Made with ❤️ for the AI community**
+Copyright 2026 Khalaf
+
+Licensed under the Apache License, Version 2.0
 
 If you find this project useful, please give it a ⭐ on [GitHub](https://github.com/Dr-Mo-Khalaf/trustguard)!
 

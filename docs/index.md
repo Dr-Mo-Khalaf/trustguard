@@ -2,11 +2,7 @@
 
 <div align="center">
 
-<<<<<<< HEAD
 **Complete validation framework for LLM inputs and outputs with pluggable judges**
-=======
-**Intelligent validation for LLM outputs with pluggable judge system**
->>>>>>> 07b0ef79bfe7732f857ebbe95b0278f2861e4db3
 
 [![PyPI version](https://badge.fury.io/py/trustguard.svg)](https://pypi.org/project/trustguard/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/trustguard.svg)](https://pypi.org/project/trustguard/)
@@ -183,8 +179,8 @@ We welcome contributions! See our [Contributing Guide](contributing.md) for:
 
 - **Stars**: ⭐ 0 (you can be the first!)
 - **Contributors**: 👥 1
-- **Version**: 📦 0.2.0
-- **License**: 📄 MIT
+- **Version**: 📦 0.2.3
+- **License**: 📄 Apache License, Version 2.0
 - **Python**: 🐍 3.8+
 
 ## 🆘 Support
@@ -197,15 +193,16 @@ We welcome contributions! See our [Contributing Guide](contributing.md) for:
 
 
 
-## 📄 License
-
-MIT License - see [LICENSE](../LICENSE) file for details.
-
----
-
 <div align="center">
-Made with ❤️ for the AI community
+
+Copyright 2026 Khalaf
+
+Licensed under the Apache License, Version 2.0
+
+If you find this project useful, please give it a ⭐ on [GitHub](https://github.com/Dr-Mo-Khalaf/trustguard)!
+
 </div>
 ```
+
 
 *

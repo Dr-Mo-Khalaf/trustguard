@@ -609,15 +609,15 @@ We follow [Semantic Versioning](https://semver.org/):
 
 1. Update version in `trustguard/__init__.py`
 2. Update `CHANGELOG.md`
-3. Create release commit: `git commit -m "Release v0.2.0"`
-4. Create tag: `git tag v0.2.0`
+3. Create release commit: `git commit -m "Release v0.2.3"`
+4. Create tag: `git tag v0.2.3`
 5. Push: `git push && git push --tags`
 6. GitHub Actions will publish to PyPI
 
 ### Changelog Format
 
 ```markdown
-## [0.2.0] - 2024-01-01
+## [0.1.0] - 2024-01-01
 ### Added
 - New feature X
 - Support for Y

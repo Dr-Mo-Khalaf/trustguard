@@ -1,9 +1,9 @@
 Metadata-Version: 2.4
 Name: trustguard
-Version: 0.2.2
+Version: 0.2.3
 Summary: Complete validation framework for LLM inputs and outputs with pluggable judges
-Author-email: Your Name <mkhalafsalama@gmail.com>
-Maintainer-email: Your Name <mkhalafsalama@example.com>
+Author-email: Mohammed Khalaf Salama <mkhalafsalama@gmail.com>
+Maintainer-email: Mohammed Khalaf Salama <mkhalafsalama@example.com>
 License: MIT
 Project-URL: Homepage, https://github.com/Dr-Mo-Khalaf/trustguard
 Project-URL: Repository, https://github.com/Dr-Mo-Khalaf/trustguard
@@ -14,7 +14,7 @@ Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
 Classifier: Topic :: Software Development :: Libraries :: Python Modules
 Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
-Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache License 2.0
 Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9
@@ -208,10 +208,10 @@ trustguard/
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE) file.
+Licensed under the Apache License 2.0 - see [LICENSE](LICENSE) file.
 
 ---
 
 <div align="center">
-Made with ❤️ for the AI community
+© 2026 Khalaf · Licensed under the Apache License 2.0 · See LICENSE file for details.
 </div>
