@@ -6,7 +6,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/trustguard)](https://pypi.org/project/trustguard/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/trustguard.svg?cacheSeconds=1)](https://pypi.org/project/trustguard/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Documentation](https://img.shields.io/badge/docs-github.io-blue)](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/index.md)
 <!-- [![GitHub Stars](https://img.shields.io/github/stars/Dr-Mo-Khalaf/trustguard?style=social)](https://github.com/Dr-Mo-Khalaf/trustguard) -->
 ![Downloads](https://pepy.tech/badge/trustguard)

@@ -4,7 +4,7 @@ Version: 0.2.4
 Summary: Complete validation framework for LLM inputs and outputs with pluggable judges
 Author-email: Mohammed Khalaf Salama <mkhalafsalama@gmail.com>
 Maintainer-email: Mohammed Khalaf Salama <mkhalafsalama@example.com>
-License: MIT
+License: Apache
 Project-URL: Homepage, https://github.com/Dr-Mo-Khalaf/trustguard
 Project-URL: Repository, https://github.com/Dr-Mo-Khalaf/trustguard
 Project-URL: Documentation, https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/index.md
@@ -55,7 +55,7 @@ Requires-Dist: transformers>=4.35.0; extra == "dev"
 
 [![PyPI version](https://badge.fury.io/py/trustguard.svg)](https://badge.fury.io/py/trustguard)
 [![Python Versions](https://img.shields.io/pypi/pyversions/trustguard.svg)](https://pypi.org/project/trustguard/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 </div>
