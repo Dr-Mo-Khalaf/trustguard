@@ -177,7 +177,6 @@ guard = TrustGuard(
     custom_rules=[check_profanity]
 )
 ```
-
 ### 3. Use an AI Judge
 
 ```python
