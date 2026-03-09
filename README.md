@@ -13,7 +13,8 @@
 
 </div>
 
-**Lightweight, schema-first safety checks for AI applications**
+
+
 
 [Quick Start Guide](https://github.com/Dr-Mo-Khalaf/trustguard/tree/main/docs/quickstart.md) - Get up and running in 5 minutes •
 [Documentation](https://github.com/Dr-Mo-Khalaf/trustguard/tree/main/docs/trustguard_manual.md) •
