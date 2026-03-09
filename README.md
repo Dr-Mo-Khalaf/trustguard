@@ -439,7 +439,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 | Metric | Value |
 |--------|-------|
 | **PyPI Downloads** | [![Downloads](https://pepy.tech/badge/trustguard)](https://pepy.tech/project/trustguard) |
-| **GitHub Stars** | [![GitHub stars](https://img.shields.io/github/stars/Dr-Mo-Khalaf/trustguard)](https://github.com/Dr-Mo-Khalaf/trustguard) |
+<!-- | **GitHub Stars** | [![GitHub stars](https://img.shields.io/github/stars/Dr-Mo-Khalaf/trustguard)](https://github.com/Dr-Mo-Khalaf/trustguard) | -->
 | **Python Versions** | 3.8+ |
 | **License** | Apache License 2.0 |
 | **Last Release** | v0.2.6 |
