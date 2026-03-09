@@ -17,6 +17,7 @@
 
 
 [Quick Start Guide](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/quickstart.md) - Get up and running in 5 minutes •
+
 [Documentation](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/trustguard_manual.md) uaer manual •
 
 </div>
