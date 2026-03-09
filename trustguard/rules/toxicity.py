@@ -1,9 +1,12 @@
 """
 Toxicity detection rule.
+
+
+March-2026 update :Toxicity detection rule with word boundaries to avoid false positives.
 """
 
 from typing import Optional, Dict, Any, List
-
+import re
 
 # Common toxic patterns
 TOXIC_PATTERNS = [
@@ -21,14 +24,13 @@ TOXIC_PATTERNS = [
     "attack",
 ]
 
-
 def validate_toxicity(
     data: Dict[str, Any],
     raw_text: str,
     context: Optional[Dict[str, Any]] = None
 ) -> Optional[str]:
     """
-    Check for toxic or harmful content.
+    Check for toxic or harmful content using word boundaries.
     
     Args:
         data: Parsed JSON data
@@ -44,7 +46,7 @@ def validate_toxicity(
     # Adjust patterns based on sensitivity
     if sensitivity >= 8:
         # Very sensitive - include milder terms
-        patterns = TOXIC_PATTERNS + ["ugly", "hate", "angry"]
+        patterns = TOXIC_PATTERNS + ["ugly", "angry"]
     elif sensitivity <= 3:
         # Less sensitive - only severe terms
         patterns = ["kill", "threat", "attack", "fuck"]
@@ -54,8 +56,9 @@ def validate_toxicity(
     lower_text = raw_text.lower()
     found_terms = []
     
+    # Use word boundaries to avoid false matches like "hell" in "hello"
     for pattern in patterns:
-        if pattern in lower_text:
+        if re.search(rf"\b{re.escape(pattern)}\b", lower_text):
             found_terms.append(pattern)
     
     if found_terms:

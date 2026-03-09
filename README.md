@@ -15,12 +15,8 @@
 
 **Lightweight, schema-first safety checks for AI applications**
 
-[Key Features](#key-features) •
-[Quick Start](#quick-start) •
-[Documentation](#documentation) •
-[Installation](#installation) •
-[Examples](#examples) •
-[Contributing](#contributing)
+[Quick Start Guide](https://github.com/Dr-Mo-Khalaf/trustguard/tree/main/docs/quickstart.md) - Get up and running in 5 minutes •
+[Documentation]((https://github.com/Dr-Mo-Khalaf/trustguard/tree/main/docs/trustguard_manual.md) •
 
 </div>
 
@@ -124,11 +120,9 @@ pip install -e ".[dev]"
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Create virtual environment
-uv venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
+uv init
 # Install trustguard
-uv pip install trustguard
+uv add trustguard
 ```
 
 ---
@@ -177,6 +171,7 @@ guard = TrustGuard(
     custom_rules=[check_profanity]
 )
 ```
+
 ### 3. Use an AI Judge
 
 ```python
@@ -206,7 +201,7 @@ print(result.log)  # "Judge [harassment]: Text contains insult"
 
 | Judge | Description | Best For |
 |-------|-------------|----------|
-| `OpenAIJudge` | GPT-4/GPT-3.5 | Production apps, high accuracy |
+| `OpenAIJudge` | GPT-4o/GPT-3.5 / .. | Production apps, high accuracy |
 | `OllamaJudge` | Local models (Llama, Phi) | Privacy, offline, free |
 | `AnthropicJudge` | Claude models | Constitutional AI |
 | `CallableJudge` | Any function | Universal adapter |
@@ -266,14 +261,8 @@ print(report.summary())
 # Top failures:
 #   - PII Detected: 1
 
-# Convert to pandas DataFrame
-df = report.to_dataframe()
-
-# Convert to polars DataFrame
-pl_df = report.to_polars()
 ```
 
----
 
 ## 📈 Statistics
 
@@ -453,7 +442,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 | **GitHub Stars** | [![GitHub stars](https://img.shields.io/github/stars/Dr-Mo-Khalaf/trustguard)](https://github.com/Dr-Mo-Khalaf/trustguard) |
 | **Python Versions** | 3.8+ |
 | **License** | Apache License 2.0 |
-| **Last Release** | v0.2.4 |
+| **Last Release** | v0.2.5 |
 
 ---
 

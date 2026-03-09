@@ -37,16 +37,16 @@ Detects personally identifiable information:
 from trustguard.rules import validate_pii
 
 # Emails
-result = validate_pii({}, "Contact me at john@example.com")
+result = validate_pii("Contact me at john@example.com")
 print(result)  # "PII Detected: Email address found in response"
 
 # Phone numbers
-result = validate_pii({}, "Call me at 555-123-4567")
+result = validate_pii("Call me at 555-123-4567")
 print(result)  # "PII Detected: Phone number found in response"
 
 # In structured data
 data = {"user_email": "john@example.com"}
-result = validate_pii(data, "")
+result = validate_pii(data)
 print(result)  # "PII Detected: Email address found in field 'user_email'"
 ```
 

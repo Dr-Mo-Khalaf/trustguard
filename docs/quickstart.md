@@ -31,16 +31,15 @@ guard = TrustGuard(schema_class=GenericResponse)
 
 ```python
 # Example LLM response (as JSON string)
-response = '
+response = """
 {
     "content": "I'd be happy to help you reset your password. Please check your email.",
     "sentiment": "positive",
     "tone": "helpful",
     "is_helpful": true
-}
+} """
 ## Validate it
 
-```python
 result = guard.validate(response)
 
 # Check the result

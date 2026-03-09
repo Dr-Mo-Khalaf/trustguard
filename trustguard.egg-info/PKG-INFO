@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: trustguard
-Version: 0.2.4
+Version: 0.2.5
 Summary: Complete validation framework for LLM inputs and outputs with pluggable judges
 Author-email: Mohammed Khalaf Salama <mkhalafsalama@gmail.com>
 Maintainer-email: Mohammed Khalaf Salama <mkhalafsalama@example.com>
@@ -96,17 +96,14 @@ from trustguard.schemas import GenericResponse
 # Initialize with a schema
 guard = TrustGuard(schema_class=GenericResponse)
 
-result = guard.validate('''
-Here's the response:
-```json
-{
+result = guard.validate(""" {
     "content": "I can help you reset your password",
     "sentiment": "positive",
     "tone": "helpful",
     "is_helpful": true
-}
-```
-''')
+}"""
+
+)
 
 if result.is_approved:
     print(f"✅ Safe: {result.data}")
@@ -121,21 +118,24 @@ from trustguard import TrustGuard
 from trustguard.schemas import GenericResponse
 from trustguard.judges import OpenAIJudge
 
-# Create a GPT-4 judge
-judge = OpenAIJudge(
+# LLM-based moderation
+llm = OpenAIJudge(
     model="gpt-4o-mini",
     config={"system_prompt": "You are a strict safety judge."}
 )
 
-# Add it to your guard
 guard = TrustGuard(
     schema_class=GenericResponse,
-    judge=judge  # <-- Now catches sarcasm and subtle threats!
+    judge=llm  # clearer that this is LLM-based
 )
 
-# This would pass basic rules but get caught by the judge
-result = guard.validate('{"content": "Sure, I can help... you idiot."}')
-print(result.log)  # "Judge [harassment]: Text contains insult"
+text = '{"content": "Sure, I can help... you idiot."}'
+result = guard.validate(text)
+
+if result.is_approved:
+    print("✅ Safe")
+else:
+    print(f"🛑 Blocked: {result.log}")
 ```
 
 ### Using ANY Model with CallableJudge

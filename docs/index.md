@@ -169,16 +169,16 @@ We welcome contributions! See our [Contributing Guide](contributing.md) for:
 
 ## 📚 Next Steps
 
-- [Quick Start Guide](quickstart.md) - Get up and running in 5 minutes
-- [Core Concepts](concepts.md) - Understand how trustguard works
-- [Judge System](judges.md) - Learn about pluggable judges
-- [Examples](examples.md) - See real-world examples
+- [Quick Start Guide](https://github.com/Dr-Mo-Khalaf/trustguard/tree/main/docs/quickstart.md) - Get up and running in 5 minutes
+- [Core Concepts](https://github.com/Dr-Mo-Khalaf/trustguard/tree/main/docs/concepts.md) - Understand how trustguard works
+- [Judge System](https://github.com/Dr-Mo-Khalaf/trustguard/tree/main/docs/judges.md) - Learn about pluggable judges
+- [Examples](https://github.com/Dr-Mo-Khalaf/trustguard/tree/main/docs/examples.md) - See real-world examples
+- [User Manual](https://github.com/Dr-Mo-Khalaf/trustguard/tree/main/docs/trustguard_manual.md) - See trustguard manual
 
 ## 📊 Project Stats
 
-- **Stars**: ⭐ 0 (you can be the first!)
-- **Contributors**: 👥 1
-- **Version**: 📦 0.2.4
+
+- **Version**: 📦 0.2.5
 - **License**: 📄 Apache License, Version 2.0
 - **Python**: 🐍 3.8+
 

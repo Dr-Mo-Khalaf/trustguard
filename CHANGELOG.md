@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - 🎯 **Pluggable Judge System** - Use any AI model as a safety validator
-- 🤖 **OpenAIJudge** - GPT-4/GPT-3.5 integration
+- 🤖 **OpenAIJudge** - GPT-4o/GPT-3.5 integration
 - 🦙 **OllamaJudge** - Local model support (Llama, Phi, Mistral)
 - 🎨 **AnthropicJudge** - Claude model integration
 - 🔌 **CallableJudge** - Universal adapter for any function/model
