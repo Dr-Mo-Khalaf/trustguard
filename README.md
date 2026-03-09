@@ -16,7 +16,7 @@
 **Lightweight, schema-first safety checks for AI applications**
 
 [Quick Start Guide](https://github.com/Dr-Mo-Khalaf/trustguard/tree/main/docs/quickstart.md) - Get up and running in 5 minutes •
-[Documentation]((https://github.com/Dr-Mo-Khalaf/trustguard/tree/main/docs/trustguard_manual.md) •
+[Documentation](https://github.com/Dr-Mo-Khalaf/trustguard/tree/main/docs/trustguard_manual.md) •
 
 </div>
 
@@ -442,7 +442,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 | **GitHub Stars** | [![GitHub stars](https://img.shields.io/github/stars/Dr-Mo-Khalaf/trustguard)](https://github.com/Dr-Mo-Khalaf/trustguard) |
 | **Python Versions** | 3.8+ |
 | **License** | Apache License 2.0 |
-| **Last Release** | v0.2.5 |
+| **Last Release** | v0.2.6 |
 
 ---
 

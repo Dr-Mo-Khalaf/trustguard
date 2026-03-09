@@ -178,7 +178,7 @@ We welcome contributions! See our [Contributing Guide](contributing.md) for:
 ## 📊 Project Stats
 
 
-- **Version**: 📦 0.2.5
+- **Version**: 📦 0.2.6
 - **License**: 📄 Apache License, Version 2.0
 - **Python**: 🐍 3.8+
 

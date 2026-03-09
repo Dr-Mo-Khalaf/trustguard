@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: trustguard
-Version: 0.2.5
+Version: 0.2.6
 Summary: Complete validation framework for LLM inputs and outputs with pluggable judges
 Author-email: Mohammed Khalaf Salama <mkhalafsalama@gmail.com>
 Maintainer-email: Mohammed Khalaf Salama <mkhalafsalama@example.com>
