@@ -5,7 +5,7 @@
 # 🔒 TrustGuard Complete Manual
 
 **Version:** 0.2.7  
-**Last Updated:** March 2025  
+**Last Updated:** March 2026  
 **Documentation:** [DOC](https://github.com/Dr-Mo-Khalaf/trustguard)
 _
 
