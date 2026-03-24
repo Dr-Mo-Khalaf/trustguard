@@ -6,7 +6,7 @@
 
 [![PyPI version](https://badge.fury.io/py/trustguard.svg)](https://pypi.org/project/trustguard/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/trustguard.svg)](https://pypi.org/project/trustguard/)
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 </div>
 
 ## 📚 Table of Contents
@@ -178,8 +178,8 @@ We welcome contributions! See our [Contributing Guide](contributing.md) for:
 ## 📊 Project Stats
 
 
-- **Version**: 📦 0.2.6
-- **License**: 📄 Apache License, Version 2.0
+- **Version**: 📦 0.2.7
+- **License**: 📄 MIT 
 - **Python**: 🐍 3.8+
 
 ## 🆘 Support
@@ -196,7 +196,7 @@ We welcome contributions! See our [Contributing Guide](contributing.md) for:
 
 Copyright 2026 Khalaf
 
-Licensed under the Apache License, Version 2.0
+Licensed under the MIT License
 
 If you find this project useful, please give it a ⭐ on [GitHub](https://github.com/Dr-Mo-Khalaf/trustguard)!
 

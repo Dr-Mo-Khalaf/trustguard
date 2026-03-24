@@ -6,7 +6,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/trustguard)](https://pypi.org/project/trustguard/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/trustguard.svg?cacheSeconds=1)](https://pypi.org/project/trustguard/)
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Documentation](https://img.shields.io/badge/docs-github.io-blue)](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/index.md)
 <!-- [![GitHub Stars](https://img.shields.io/github/stars/Dr-Mo-Khalaf/trustguard?style=social)](https://github.com/Dr-Mo-Khalaf/trustguard) -->
 ![Downloads](https://pepy.tech/badge/trustguard)
@@ -306,18 +306,18 @@ trustguard --help
 
 ## 📚 Documentation
 
-Comprehensive documentation is available at [docs](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docs/index.md)
+Comprehensive documentation is available at [docs](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/index.md)
 
 | Guide | Description |
 |-------|-------------|
-| [Quick Start](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/quickstart.md) | Get up and running in 5 minutes |
-| [Core Concepts](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/concepts.md) | Understand how trustguard works |
-| [Schema Validation](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/schemas.md) | Define your own response structures |
-| [Rules System](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/rules.md) | Built-in validation rules |
-| [Judge System](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/judges.md) | Deep dive into AI judges |
-| [API Reference](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/api.md) | Complete API documentation |
-| [Examples](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/examples.md) | Real-world use cases |
-| [Contributing](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docsdocs/contributing.md) | How to contribute |
+| [Quick Start](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/quickstart.md) | Get up and running in 5 minutes |
+| [Core Concepts](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/concepts.md) | Understand how trustguard works |
+| [Schema Validation](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/schemas.md) | Define your own response structures |
+| [Rules System](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/rules.md) | Built-in validation rules |
+| [Judge System](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/judges.md) | Deep dive into AI judges |
+| [API Reference](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/api.md) | Complete API documentation |
+| [Examples](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/examples.md) | Real-world use cases |
+| [Contributing](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/contributing.md) | How to contribute |
 
 ---
 
@@ -407,16 +407,16 @@ We welcome contributions! Here's how you can help:
 - 🐛 **Report bugs** - Open an issue
 - 💡 **Suggest features** - Start a discussion
 - 📝 **Improve documentation** - Submit a PR
-- 🔧 **Add new rules or judges** - Follow our [contributing guide](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docs/contributing.md)
+- 🔧 **Add new rules or judges** - Follow our [contributing guide](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/contributing.md)
 - 🌟 **Star the project** - Show your support
 
-See [CONTRIBUTING.md](https://https://github.com/Dr-Mo-Khalaf/trustguard/trustguard/docs/contributing.md) for detailed guidelines.
+See [CONTRIBUTING.md](https://github.com/Dr-Mo-Khalaf/trustguard/blob/main/docs/contributing.md) for detailed guidelines.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License  see the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -443,8 +443,8 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 | **PyPI Downloads** | [![Downloads](https://pepy.tech/badge/trustguard)](https://pepy.tech/project/trustguard) |
 <!-- | **GitHub Stars** | [![GitHub stars](https://img.shields.io/github/stars/Dr-Mo-Khalaf/trustguard)](https://github.com/Dr-Mo-Khalaf/trustguard) | -->
 | **Python Versions** | 3.8+ |
-| **License** | Apache License 2.0 |
-| **Last Release** | v0.2.6 |
+| **License** | MIT|
+| **Last Release** | v0.2.7 |
 
 ---
 
@@ -460,7 +460,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 Copyright 2026 Khalaf
 
-Licensed under the Apache License, Version 2.0
+Licensed under the MIT License
 
 Star the project on GitHub to show your support  ⭐  [GitHub](https://github.com/Dr-Mo-Khalaf/trustguard)!
 

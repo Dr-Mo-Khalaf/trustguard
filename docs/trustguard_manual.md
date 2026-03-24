@@ -1,13 +1,13 @@
 ## 📚 **Complete TrustGuard Manual Documentation**
 
-
+![trustguard](mkh1.jpg)
 
 # 🔒 TrustGuard Complete Manual
 
-**Version:** 0.2.4  
+**Version:** 0.2.7  
 **Last Updated:** March 2025  
-**Documentation:** https://dr-mo-khalaf.github.io/trustguard/
-
+**Documentation:** [DOC](https://github.com/Dr-Mo-Khalaf/trustguard)
+_
 
 
 ## 📑 Table of Contents
@@ -1103,17 +1103,7 @@ config = {
 }
 ```
 
----
 
-## 📚 Additional Resources
-
-- [Quick Start Guide](quickstart.md)
-- [Examples Gallery](examples.md)
-- [Contributing Guide](contributing.md)
-- [GitHub Repository](https://github.com/SCI/trustguard)
-- [PyPI Page](https://pypi.org/project/trustguard/)
-
----
 
 <div align="center">
 
@@ -1122,19 +1112,3 @@ config = {
 If you find this manual helpful, please ⭐ the project on GitHub!
 
 </div>
-```
-
-## 🎯 **Key Features Highlighted**
-
-| Section | Focus |
-|---------|-------|
-| **PII Detection** | Comprehensive coverage with examples |
-| **Rules System** | Each rule explained with code |
-| **Judge System** | All judge types with config options |
-| **Bidirectional** | Input + output validation patterns |
-| **Batch Processing** | Performance optimization |
-| **Statistics** | Monitoring and metrics |
-| **CLI** | Command-line reference |
-| **Troubleshooting** | Common issues and solutions |
-
-This manual is now ready to be used as your complete documentation! 📚

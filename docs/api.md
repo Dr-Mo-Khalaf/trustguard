@@ -686,7 +686,7 @@ def test_custom_rule():
 
 ## 📋 API Version History
 
-### v0.2.6 (Current)
+### v0.2.7 (Current)
 - Added pluggable judge system
 - Added EnsembleJudge
 - Added CallableJudge for universal adapter

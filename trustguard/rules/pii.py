@@ -66,21 +66,37 @@ def scan_data(data: Union[Dict, list, str], parent_path="") -> Optional[str]:
     return None
 
 def validate_pii(
-    input_data: Union[str, Dict[str, Any], None] = None
+    data: Union[Dict[str, Any], None] = None,
+    raw_text: Union[str, None] = None,
+    context: Optional[Dict[str, Any]] = None
 ) -> Optional[str]:
     """
-    Validate PII in input data.
-    If input_data is a string, scans it as raw text.
-    If input_data is a dict, scans it recursively.
-    """
-    if input_data is None:
-        return None
-
-    if isinstance(input_data, str):
-        return check_text(input_data, location="raw_text")
-    elif isinstance(input_data, dict):
-        return scan_data(input_data)
+    Universal PII validator.
     
+    Accepts:
+      - Just a raw string
+      - Dict (parsed JSON)
+      - Both
+      - Optional context
+    """
+    # If only one argument passed and it's a string, treat it as raw_text
+    if data is not None and isinstance(data, str) and raw_text is None:
+        raw_text = data
+        data = {}
+
+    data = data or {}
+    raw_text = raw_text or ""
+
+    # 1️⃣ Scan structured data
+    result = scan_data(data)
+    if result:
+        return result
+
+    # 2️⃣ Scan raw text
+    result = check_text(raw_text, location="raw_text")
+    if result:
+        return result
+
     return None
 
 
